@@ -11,7 +11,7 @@ function getMusicTitlesByYear(tracks) {
 for (const track of tracks) {
   if (!track || typeof track !== 'object') continue;
 
-  if (typeof track.title !== 'string') continue; // ✅ add this line
+  if (typeof track.title !== 'string') continue;
 
   if (typeof track.year !== "number" || Number.isNaN(track.year)) continue;
 
